@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/slucas/.ssh'
+let g:netrw_dirhist_2='/var/www/rue89v2'
+let g:netrw_dirhist_3='/etc/apache2'
+let g:netrw_dirhist_4='/etc/apache2/sites-available'
+let g:netrw_dirhist_5='/etc/apache2'
+let g:netrw_dirhist_6='/var/www/rue89v2/dev/sites/blogs/modules/custom/rue89_blogs_blocks'
+let g:netrw_dirhist_7='/var/www/rue89v2/dev/sites/all/modules/panels_everywhere'
+let g:netrw_dirhist_8='/var/www/rue89v2/dev/sites/all/modules/custom/rue89_blocks'
+let g:netrw_dirhist_9='/var/www/rue89v2/dev/sites/all/modules/custom'
