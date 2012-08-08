@@ -134,4 +134,12 @@ set foldlevel=1         "this is just what i use
 " change runtime path to add vim 
 set runtimepath+=$HOME/.vim/plugin
 
-
+" reopen a file at last line 
+" http://superuser.com/questions/111016/vim-open-file-at-location-that-was-last-viewed
+if has("autocmd")
+  " When editing a file, always jump to the last cursor position
+  autocmd BufReadPost *
+  \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+  \   exe "normal g'\"" |
+  \ endif
+endif
