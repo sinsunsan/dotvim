@@ -96,7 +96,7 @@ if has("autocmd")
  endif
  endfun
  
-// Drupal vim settings http://drupal.org/node/29325
+" Drupal vim settings http://drupal.org/node/29325
 set expandtab
 set tabstop=2
 set shiftwidth=2
