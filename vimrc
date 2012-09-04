@@ -96,6 +96,27 @@ if has("autocmd")
  endif
  endfun
  
+// Drupal vim settings http://drupal.org/node/29325
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set autoindent
+set smartindent
+
+ if has("autocmd")
+  " Drupal *.module and *.install files.
+  augroup module
+    autocmd BufRead,BufNewFile *.module set filetype=php
+    autocmd BufRead,BufNewFile *.install set filetype=php
+    autocmd BufRead,BufNewFile *.test set filetype=php
+    autocmd BufRead,BufNewFile *.inc set filetype=php
+    autocmd BufRead,BufNewFile *.profile set filetype=php
+    autocmd BufRead,BufNewFile *.view set filetype=php
+  augroup END
+endif
+syntax on
+
+
  " Avant l'ajout au fichier compressé : décompresse le fichier avec "cmd"
  fun! GZIP_appre(cmd)
  execute "!" . a:cmd . " <afile>"
@@ -120,8 +141,6 @@ set tabstop=2 shiftwidth=2 expandtab
 set nobackup
 set nowritebackup
 set noswapfile
-
-
 
 " http://smartic.us/2009/04/06/code-folding-in-vim/
 "folding settings
