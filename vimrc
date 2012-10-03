@@ -100,8 +100,6 @@ if has("autocmd")
 set expandtab
 set tabstop=2
 set shiftwidth=2
-set autoindent
-set smartindent
 
  if has("autocmd")
   " Drupal *.module and *.install files.
@@ -132,9 +130,6 @@ syntax on
  autocmd BufReadPost * if line("'\"") && line("'\"") <= line("$") | exe "normal `\"" | endif
  endif
 endif " has("autocmd")
-
-" Pour faire des espaces à la place des tabulations
-set tabstop=2 shiftwidth=2 expandtab
 
 
 " pas de fichiers swap http://thehumblecoder.wordpress.com/2006/08/08/vim-swap-and-backup-files/
